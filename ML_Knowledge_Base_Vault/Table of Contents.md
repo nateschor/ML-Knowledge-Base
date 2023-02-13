@@ -8,6 +8,7 @@
 
 ### Packages
 - [[logr]]
+- [[pacman]]
 - [[tidymodels]]
 - [[tidyverse]]
 - [[tidylog]]
@@ -22,6 +23,7 @@
 - [[data.table]]
 - [[here]]
 - [[fs]]
+- [[tictoc]]
 - [[Parallel Processing]]
 
 

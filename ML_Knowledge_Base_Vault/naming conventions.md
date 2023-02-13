@@ -11,7 +11,7 @@ mat_descriptive_name
 
 - Use `_` as a suffix for the variable you are using for iteration, as in `state_` in the example below:
 - For debugging, choose a value from the object you are iterating through and assign it above the for loop. You can then run the rest of the loop for a specific value without having to change the loop
-- use [tictoc](https://cran.r-project.org/web/packages/tictoc/tictoc.pdf) for timing your code, and include comments that specify how long the code will take to run
+- use [[tictoc]] for timing your code, and include comments that specify how long the code will take to run
 	- **REMEMBER TO `rm(state_)` and either remove the debugging line or comment it out**
 
 ```R
@@ -40,4 +40,10 @@ Remove_Non_Hyperparameters <- function() {
   rm(list = v_objects_all[!v_objects_to_keep], envir = globalenv())
 }
 
+Source_And_Remove_Non_Hyperparameters <- function(r_script) {
+  
+  source(r_script, local = TRUE)
+  Remove_Non_Hyperparameters()
+  
+}
 ```

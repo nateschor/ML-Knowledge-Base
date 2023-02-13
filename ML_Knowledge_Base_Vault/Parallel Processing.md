@@ -45,3 +45,9 @@ foreach(i = 1:NUM_MODELS, .packages = c("tidyverse", # each worker needs access 
 stopCluster(CL)
 toc()
 ```
+
+### Check that your parallel processing is working
+
+- do mini [[tictoc]] experiments to confirm you are getting a speedup by taking a small sample of the data and confirm that parallelizing leads to less computation time than doing it sequentially
+	- there is a startup cost to parallelizng, so make sure you use enough observations in your experiment to ensure that the parallelization speedup overcomes this hump
+- If you are using *n* workers,  go to Task Manager --> Processes --> Background processes and confirming that you see *n* sessions

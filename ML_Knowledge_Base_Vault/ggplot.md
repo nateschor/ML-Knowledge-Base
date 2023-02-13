@@ -15,3 +15,5 @@ theme(
 
 
 ```
+
+Can wrap all of your common ggplot elements using [theme_set](https://ggplot2.tidyverse.org/reference/theme_get.html)
