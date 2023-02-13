@@ -12,10 +12,10 @@
 - [[tidyverse]]
 - [[tidylog]]
 - [[glmnetUtils]]
-- [[gplot]]
+- [[ggplot]]
 - [[renv]]
 - [[fst]]
-- [[kable/kableExtra]]
+- [[kableExtra]]
 - [[lubridate]]
 - [[slider]]
 - [[tsibble]]
@@ -26,14 +26,17 @@
 - [[doParallel]]
 
 ### Parallel Processing
+### [[Shortcuts]]
 
-### Shortcuts
-
-### Coding Style
+## Coding Style
 - [[naming conventions]]
 - [[vim]]
+- [[formatting]]
+- [[best practices]]
 
-# Shell
+### [[Reading List]]
+
+### [[Shell]]
 
 
 

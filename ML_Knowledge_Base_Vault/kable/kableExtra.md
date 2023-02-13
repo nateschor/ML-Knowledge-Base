@@ -1,0 +1,2 @@
+- turn R data frames/tibbles into .tex files that can be read into LaTeX
+- vignette [here](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html)

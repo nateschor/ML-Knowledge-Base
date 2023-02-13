@@ -1,0 +1,13 @@
+-   SHIFT + s to right indent, > or >> and < or << to right/left indent
+-   CTRL + o to open things
+-   pressing * while on a text finds all occoruences of that text and then can use n/N to navigage
+- ![[Pasted image 20230213135411.png]]
+- -   CTRL + A /CTRL + X to increment/decrement text number
+-   { or } to jump b/w paragraphs
+-   Using register with "<number or thing>p, saves your copying history
+- ![[Pasted image 20230213135429.png]]
+- ![[Pasted image 20230213135435.png]]
+- -   gv to reselect what you just selected
+-   Use % in v mode to select the last parenthesis without selecting the %>%
+- ![[Pasted image 20230213135451.png]]
+- ![[Pasted image 20230213135503.png]]
