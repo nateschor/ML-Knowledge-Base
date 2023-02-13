@@ -1,0 +1,3 @@
+- [regex101](https://regex101.com/) for testing your regular expressions
+- [regex crossword](https://regexcrossword.com/) for fun practicing
+- [documentation](https://www.regular-expressions.info/) on regex

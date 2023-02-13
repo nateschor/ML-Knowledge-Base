@@ -27,3 +27,17 @@ for (state_ in v_states) {
 }
 toc()
 ```
+
+### Reserve ALL CAPS for script hyperparameters
+
+Below is a script for removing all global variables that are *not* in all caps
+
+```R
+Remove_Non_Hyperparameters <- function() {
+  
+  v_objects_all <- setdiff(ls(envir = globalenv()), c("Remove_Non_Hyperparameters", "Source_And_Remove_Non_Hyperparameters"))
+  v_objects_to_keep <- str_to_upper(v_objects_all) == v_objects_all
+  rm(list = v_objects_all[!v_objects_to_keep], envir = globalenv())
+}
+
+```

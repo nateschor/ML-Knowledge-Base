@@ -1,2 +1,2 @@
 - [R for Data Science](https://r4ds.had.co.nz/) to get started with the tidyverse
-- 
+- use [lazy_dt](https://dtplyr.tidyverse.org/reference/lazy_dt.html) to keep writing `tidyverse` syntax but get some of [[data.table]]'s speedup

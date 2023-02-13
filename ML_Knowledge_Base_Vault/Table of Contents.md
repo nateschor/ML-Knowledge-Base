@@ -22,10 +22,9 @@
 - [[data.table]]
 - [[here]]
 - [[fs]]
-- [[furrr]]
-- [[doParallel]]
+- [[Parallel Processing]]
 
-### Parallel Processing
+
 ### [[Shortcuts]]
 
 ## Coding Style
@@ -38,6 +37,7 @@
 
 ### [[Shell]]
 
+### [[RegEx]]
 
 
 

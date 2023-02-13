@@ -12,7 +12,7 @@ df <- read_fst("path_to_file.fst") %>%
 
 ```R
 mtcars %>%
-	group_by(cyl)
+	group_by(cyl) %>% 
 	mutate(
 		mean_mpg = mean(mpg),
 		mean_wt = mean(wt)	

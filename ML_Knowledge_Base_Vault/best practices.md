@@ -17,6 +17,7 @@ If the number of groups from the above step is equal to the number of observatio
 ### Checking for missing values before joining
 
 - Joining datasets when there are `NAs` can cause the dimensions of your dataset to explode
+- use [[tidylog]] to make sure there are no duplicated observations when you join, and that the dimensions for x and y make sense
 - quickly check the number of `NAs` for each variable with
 
 ```R
