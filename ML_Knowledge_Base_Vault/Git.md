@@ -1,0 +1,3 @@
+-   Recommended starting point is this tutorial from [software carpentry](https://swcarpentry.github.io/git-novice/)
+-   a more comprehensive resource is the [git book](https://git-scm.com/book/en/v2)
+-   for when you inevitably make mistakes, [dangitgit](https://dangitgit.com/en) has solutions for helping with common errors
