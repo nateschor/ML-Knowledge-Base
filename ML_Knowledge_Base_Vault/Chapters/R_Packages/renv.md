@@ -1,3 +1,4 @@
 -   [vignette](https://rstudio.github.io/renv/articles/renv.html)
 -   [video](https://www.youtube.com/watch?v=yc7ZB4F_dc0) showing how to set up using renv
 -   When a collaborator first launches in the project, `renv` should automatically bootstrap itself, thereby downloading and installing the appropriate version of renv into the project library. After this has completed, they can then use [renv::restore()](https://rstudio.github.io/renv/reference/restore.html) to restore the project library locally on their machine
+- see [[GitHub and GitLab#Working locally]]  for the `renv` workflow  
