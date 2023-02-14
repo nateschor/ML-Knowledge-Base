@@ -19,3 +19,36 @@
 Workflow from Jesse Shapiro and based off of [gslab manual](https://github.com/gslab-econ/lab-manual/wiki/Introduction)
 
 When wrapping up a merge request and closing an issue, go to the last file on the branch that was modified. Press y to get a permanent link
+
+Never do anything on main!!
+
+<details>
+  <summary>Code</summary>
+
+```R
+library(devtools)
+load_all()
+
+eventstudy_estimates_ols <- EventStudy(
+    estimator = "OLS",
+    data = df_sample_dynamic,
+    outcomevar = "y_smooth_m",
+    policyvar = "z",
+    idvar = "id",
+    timevar = "t",
+    controls = "x_r",
+    post = 3,
+    pre = 2,
+    overidpre = 4,
+    overidpost = 5,
+    normalize = - 3
+)
+
+EventStudyPlot(
+    estimates = eventstudy_estimates_ols,
+    Smpath = TRUE
+)
+
+ggsave("y_smooth.png", dpi = 250, width = 5, height = 3.5)
+```
+</details>

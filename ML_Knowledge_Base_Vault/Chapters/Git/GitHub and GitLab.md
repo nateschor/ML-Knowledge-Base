@@ -1,5 +1,7 @@
 [Tips and tricks](https://github.com/git-tips/tips#show-a-git-logical-variable)
 
+### Add more comments/examples
+
 Debugging
 
 -   Using git to look at who modified each individual line within a file and when with <git blame filename> [https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git)
