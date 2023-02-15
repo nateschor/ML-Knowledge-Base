@@ -2,8 +2,6 @@
 
 ### [[GitHub and GitLab]]
 
-
-
 # R
 
 ### Packages
@@ -26,16 +24,13 @@
 - [[tictoc]]
 - [[Parallel Processing]]
 
-
 ### [[Shortcuts]]
 
 ## Coding Style
-- [[naming conventions]]
+- [[Naming Conventions]]
 - [[vim]]
-- [[formatting]]
-- [[best practices]]
-
-### [[Reading List]]
+- [[Formatting]]
+- [[Research Practices]]
 
 ### [[Shell]]
 

@@ -1,4 +1,4 @@
-Sends console output to a `.log` file that can be reviewed during a [[GitHub and GitLab]] pull request to check some of the topics mentioned in [[best practices]]. Some ideas for things to log are:
+Sends console output to a `.log` file that can be reviewed during a [[GitHub and GitLab]] pull request to check some of the topics mentioned in [[Research Practices]]. Some ideas for things to log are:
 - any tibble you load, create, or save
 - means of outcome variable
 - tables of frequency and % for categorical variables of interest
