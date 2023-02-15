@@ -25,7 +25,7 @@
 	-   Example in [dangit, git](https://dangitgit.com/en)
 -   Use `git reflog` to figure out the HEAD name shortcuts
 
-### "Saving" working without commiting it
+### "Saving" work without commiting it
 -  use [git stash](https://bluecast.tech/blog/git-stash/) to keep a copy of your current state without commiting it
 - helpful for switching to another branch when you still have uncommitted changes
 
