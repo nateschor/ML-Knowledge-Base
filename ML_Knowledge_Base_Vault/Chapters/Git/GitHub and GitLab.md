@@ -26,8 +26,9 @@
 #### Creating an issue and its associated branch in the repo
 1. Create an issue
 2. In the opening comment to that issue, create tasks to complete using `- [ ]`  
-3. Create a branch for that issue
+3. Create a branch for that issue directly on GitHub/GitLab
 	- if the issue is called "Create Outcome Variable" and it is issue #4, create a branch called issue4_create_outcome_variable
+	
 
 
 #### Working locally

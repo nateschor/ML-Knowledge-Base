@@ -3,10 +3,16 @@
 -   a more comprehensive resource is the [git book](https://git-scm.com/book/en/v2)
 -   for when you inevitably make mistakes, [dangitgit](https://dangitgit.com/en) has solutions for helping with common errors
 - [Tips and tricks](https://github.com/git-tips/tips#show-a-git-logical-variable)
-- ![[Pasted image 20230213134711.png]]
-- ![[Pasted image 20230213134723.png]]
--  [https://eagain.net/articles/git-for-computer-scientists/](https://eagain.net/articles/git-for-computer-scientists/)
-- ![[Pasted image 20230213134759.png]]
+
+
+#### Git's Relationship to your Working Directory
+ ![[three_trees.png]]
+ ![[three_trees_arrows.png]]
+
+#### Git Terminology with Diagrams
+
+- [git for computer scientists](https://eagain.net/articles/git-for-computer-scientists/)
+![[git_terminology.png]]
 
 ### Debugging
 -   Use `git blame filename` to look at who modified each [individual line](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git) within a file
@@ -25,31 +31,30 @@
 
 
 ### Breaking up a larger commit into smaller commits
-- ![[Pasted image 20230213134816.png]]
-- ![[Pasted image 20230213134825.png]]
+- helpful if you have a number of edits on the same file, but they don't go together logically
+	- example: you experiment with [[Parallel Processing]] and [[data.table]] in different parts of the same script, so you may want to commit those parts of the script separately
 
-### Searching all files in repo for a particularly string
+![[chunk_file_commits.png]]
+- Manual editing if git doesn't get the chunking right for you 
+![[manually_chunk_file_commits.png]]
+
+### Searching all files in repo for a particular string
 - `git grep -n --heading --break string` for nicely printed console output for each script where `string` occurs, plus the line number
 - `git grep -C 5 string` for 5 lines of **C**ontext around `string` (can change the value of 5)
 
 
 ### See what has changed within a given time period
-- ![[Pasted image 20230213135008.png]]
-![[Pasted image 20230213135055.png]]
-![[Pasted image 20230213135043.png]]
+- helpful if you've been away from a project and want to see what has changed recently
+ ![[log_in_time_range.png]]
+![[logs_between_date_range.png]]
 
 ### Show changes over time for specific file
 - `git log -p file_name`
 - Works well with `git blame` from [[#Debugging]]
 
-### View a file of another branch
-![[Pasted image 20230213135104.png]]
+#### Helpful for Taking Stock of your Repo's State
+![[view_file_on_another_branch.png]]
 
-
-### List all branches and their upstreams, as well as the last commit on each branch
-
-
-![[Pasted image 20230213135035.png]]
-![[Pasted image 20230213135110.png]]
+![[branches_upsteams_last_commits.png]]
 
 
