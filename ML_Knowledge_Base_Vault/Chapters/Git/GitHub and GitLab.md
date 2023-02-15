@@ -48,6 +48,7 @@ The screnshots below give examples of how to:
 11.  `git add renv.lock`
 12.  `git commit -m "Update package(s) XYZ #X"`
     -   if you want to revert back to an earlier version of the package, use `renv::revert("commit_hash_for_package_version_I_want")` followed by `renv::restore()`
+    - if you want to write a longer message, use `git commit`. It will then open up a [[vim]] editor for your commit message
 13.  `git push`
 14.  Open a merge request, and after all the changes are agreed upon, close issue X by commenting with a [stable link](https://docs.github.com/en/repositories/working-with-files/using-files/getting-permanent-links-to-files) to the issue branch. See section on [[#Merge Request Workflow]] for more details.
 15.  [squash and merge](https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html) and delete the source branch.
