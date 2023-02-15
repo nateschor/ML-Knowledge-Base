@@ -7,18 +7,20 @@
 - Ctril + e for adding code 
 -  [GitLab markdown](https://docs.gitlab.com/ee/user/markdown.html)
 -   [Cool flowcharts](https://about.gitlab.com/handbook/tools-and-tips/mermaid/)
-- ![[Pasted image 20230213134908.png]]
-- ![[Pasted image 20230213134913.png]]
-- Add something that looks like a key, showoff the color with a hex code, and also make longer comments collapsable to have less clutter
-- ![[Pasted image 20230213134934.png]]
-- ![[Pasted image 20230213134940.png]]
-- ![[Pasted image 20230213135000.png]]
-- Add collapsible sections like below for displaying long blocks of code or large figures
+- ![[mermaid_markdown.png]]
+- ![[mermaid_rendered.png]]
+The screnshots below give examples of how to:
+- add a keyboard key in markdown
+- showoff the color with a hex code
+- make longer comments collapsable to have less clutter (especially usefor for long blocks of code or large figures)
+![[markdown_color_samples.png]]
+![[rendered_color_samples.png]]
 <details>
   <summary>Code</summary>
 `print("This is collapsed, and is helpful for not crowding the text with code and figures")``
 
 </details>
+
 
 
 ### Project Workflow
