@@ -1,5 +1,7 @@
 ### Project Workflow
 
+[See Getting Started with Git](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git) for more help and information
+
 #### Creating an issue and its associated branch in the repo
 1. Create an issue
 2. In the opening comment to that issue, create tasks to complete using `- [ ]`  
