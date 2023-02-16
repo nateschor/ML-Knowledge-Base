@@ -1,6 +1,6 @@
 ### Project Workflow
 
-[See Getting Started with Git](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git) for more help and information
+[See Getting Started with Git](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git) for more help and information. If GitHub prompts you to authenticate, follow the instructions given. You may need to consult with your organization's IT support
 
 Add instructions on how to set up a git repo
 
