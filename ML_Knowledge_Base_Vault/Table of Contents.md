@@ -30,7 +30,10 @@
 - [[Naming Conventions]]
 - [[vim]]
 - [[Formatting]]
-- [[Research Practices]]
+
+## Research Practices
+- [[Reasoning About your Data]]
+- [[Creating a Coding Pipeline]]
 
 ### [[Shell]]
 

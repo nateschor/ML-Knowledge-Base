@@ -60,4 +60,4 @@ Calculate_Mean <- function(column)
 
 ```
 
-General reserarch project advicein in [Jesse Shapiro Practitioner's Guide](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) 
+General reserarch project advice in [Jesse Shapiro Practitioner's Guide](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) 

@@ -4,7 +4,6 @@
 -   for when you inevitably make mistakes, [dangitgit](https://dangitgit.com/en) has solutions for helping with common errors
 - [Tips and tricks](https://github.com/git-tips/tips#show-a-git-logical-variable)
 
-
 #### Git's Relationship to your Working Directory
  ![[three_trees.png]]
  ![[three_trees_arrows.png]]
