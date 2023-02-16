@@ -2,6 +2,8 @@
 
 [See Getting Started with Git](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git) for more help and information
 
+Add instructions on how to set up a git repo
+
 #### Creating an issue and its associated branch in the repo
 1. Create an issue
 2. In the opening comment to that issue, create tasks to complete using `- [ ]`  
@@ -9,7 +11,7 @@
 	- if the issue is called "Create Outcome Variable" and it is issue #4, create a branch called issue4_create_outcome_variable
 
 #### Working locally
-1.  Get the repositorie's HTTPS  from GitLab under Clone --> Clone with HTTPS
+1.  Get the repositorie's HTTPS  from GitLab under Clone --> Clone with HTTPS (or GitHub CLI on GitHub)
 2. In the RStudio terminal, clone repo using `git clone HTTPS`
 3.  Run `git pull` and then `git switch issue4_create_outcome_variable`. If continually prompted for your password when using `git pull` or `git push`, reach out to Research IT/Kellen
 4.  In the same directory as your local git repo, click on Create Project --> Existing Directory. Browse to the folder that was created in step 1 and click Create Project
