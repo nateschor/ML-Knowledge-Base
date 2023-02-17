@@ -15,17 +15,7 @@ Add instructions on how to set up a git repo
 2. In the RStudio terminal, clone repo using `git clone HTTPS`
 3.  Run `git pull` and then `git switch issue4_create_outcome_variable`. If continually prompted for your password when using `git pull` or `git push`, reach out to Research IT/Kellen
 4.  In the same directory as your local git repo, click on Create Project --> Existing Directory. Browse to the folder that was created in step 1 and click Create Project
-5.  Run `renv::init()` followed by `renv::snapshot()`
-    -   note that in order for `renv::snapshot()` to "see" the package, it must be called using either `library(package_name)` or [[pacman]]`::p_load(package_name)` in a **saved script**. `renv::snapshot()` will not be able to find the package if it only lives in an untitled.R script
-6.  `git add .Rprofile renv.lock renv/activate.R`
-7.  `git commit -m "Adding initial packages #X"`, where X is replaced with the issue number (4 in the example)
-	1. See [here](https://cbea.ms/git-commit/) for suggestions on how to write a comit message
-8.  `git push`
-9.  Update packages with `renv::update("package_name_as_string")`
-10.  After you update or install new packages, `renv::snapshot()`
-11.  `git add renv.lock`
-12.  `git commit -m "Update package(s) XYZ #X"`
-    -   if you want to revert back to an earlier version of the package, use `renv::revert("commit_hash_for_package_version_I_want")` followed by `renv::restore()`
+5.  
     - if you want to write a longer message, use `git commit`. It will then open up a [[vim]] editor for your commit message
 13.  `git push`
 14.  Open a merge request, and after all the changes are agreed upon, close issue X by commenting with a [stable link](https://docs.github.com/en/repositories/working-with-files/using-files/getting-permanent-links-to-files) to the issue branch. See section on [[#Merge Request Workflow]] for more details.

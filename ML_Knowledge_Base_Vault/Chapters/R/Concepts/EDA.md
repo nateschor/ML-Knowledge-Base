@@ -1,0 +1,3 @@
+- [skimr](https://cran.r-project.org/web/packages/skimr/vignettes/skimr.html)
+- [SmartEDA](https://cran.r-project.org/web/packages/SmartEDA/vignettes/SmartEDA.html)
+- [DataExplorer](https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html)
