@@ -2,6 +2,7 @@
 # Planning a project
 
 ## Nathan TODO
+- thought about what aspects of the
 Do a brain dump about how we planned CRISM project. With CS we didn't do it, so we made a great progress on this in a year.
 
 # Starting a new project or managing an existing one in Git
@@ -50,6 +51,9 @@ Describe the process of preparing an issue. Chat with Vitaly, take notes about w
 - [[here]]
 - [[fs]]
 - [[tictoc]]
+
+### Concepts
+- [[EDA]]
 - [[Parallel Processing]]
 
 ## RStudio
