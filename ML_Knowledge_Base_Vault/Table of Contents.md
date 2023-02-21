@@ -21,7 +21,8 @@ Do a brain dump about how we planned CRISM project. With CS we didn't do it, so 
 - new project in [GitLab](https://docs.gitlab.com/ee/user/project/)
 - new project in [GitHub](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/creating-a-project-board)
 
-
+## Nathan TODO:
+Make the same thing as "Starting a new project" just for quick steps to pull the branch of interest
 
 ### [[Git]]
 
@@ -29,7 +30,7 @@ Do a brain dump about how we planned CRISM project. With CS we didn't do it, so 
 
 # Planning the new analyses
 
-## Nathan TODO:
+## Nathan TODO: Make the below more descriptive by adding examples at every step. Example of notes of what V says during meeting, example of a todo N makes based on the notes, example of issue. 
 
 1. Chat with Vitaly, and take notes on what should be accomplished
 2. Create an [Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues) for addressing the task
@@ -40,15 +41,29 @@ Do a brain dump about how we planned CRISM project. With CS we didn't do it, so 
 Describe the process of preparing an issue. Chat with Vitaly, take notes about what we want to do. Then create an issue based on the notes. Vitaly looks at the issue and edits/comments if needed. You plan the scripts (how do you do that, btw, Nathan, I have no idea). T
 
 ## Research Practices
+
+# Nathan TODO for reasoning:
+Can you add to the reasoning thing below an actionable check list? For example:
+Every time you create a new dataframe:
+- [ ] Check if there are any duplicates at the level of analysis
+Every time you do a filter:
+- [ ] Look at tidylog output and ask yourself whether you understand why the observations are removed. If you're not 100% sure, look at individual examples that are removed 
+
+
 - [[Reasoning About your Data]]
 - [[Creating a Coding Pipeline]]
 
+# Nathan TODO: 
+Add discussion of keeping data files separate by time and/or some unit identifiers when the dataset is large.
 
 # Executing the analyses: writing new scripts or editing existing ones
 
 #### renv
 
 - see [[renv]] for more information about the package
+
+## Nathan TODO: 
+Put the below into a separate file and reference it here
 
 1.  Get the repositorie's HTTPS  from GitLab under Clone --> Clone with HTTPS (or GitHub CLI on GitHub)
 2. In the RStudio terminal, clone repo using `git clone HTTPS`. Talk with your organization's IT if getting errors at this step
@@ -68,7 +83,7 @@ Describe the process of preparing an issue. Chat with Vitaly, take notes about w
 If you want to revert back to an earlier version of the package, use `renv::revert("commit_hash_for_package_version_I_want")` followed by `renv::restore()`
 
 #### writing code
-
+## NATHAN TODO: discuss git add and git push, put this in a separate note and link it both here and above in the new "pushing and pulling using git" section
 1. Create a branch that is linked to the issue. For example, if the GitHub/GitLab assigned number to the issue Create outcome variable for defaulting is 4, the name of the branch should be issue4_create_outcome_variable_for_defaulting
 2. `git pull` to make your local setup synced with the repo, and then `git switch issue4_create_outcome_variable_for_defaulting` to switch to the new branch
 3. Write code, committing and pushing as you make changes
@@ -76,9 +91,9 @@ If you want to revert back to an earlier version of the package, use `renv::reve
 	2. if you want to write a longer message, use `git commit`. It will then open up a [[vim]] editor for your commit message
 
 ## Coding Style
-- [[Naming Conventions]]
+- [[naming conventions]]
 - [[vim]]
-- [[Formatting]]
+- [[formatting]]
 ## Tools 
 
 ## Shell 
@@ -118,7 +133,7 @@ If you want to revert back to an earlier version of the package, use `renv::reve
 How does Vitaly sign off the code. Sharing screen while vitaly looks at logs and diffs. Cover pull requests (or just link the git resources again)
 
 1. After you have checked of all boxes created in [[#Planning the new analyses]], open a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
-2. Screenshare with Vitaly while Vitaly looks at the [[logr]] logs and diffs
+2. Screenshare with Vitaly while Vitaly looks at the [[logr]] logs and diffs on two windows opened on the same monitor side by side
 3. Make any changes suggested, repeating step 2 as needed
 4. After getting Vitaly's approval, follow [[GitHub and GitLab#Merge Request Workflow]]
 5. Start again with [[#Planning the new analyses]]
