@@ -24,6 +24,14 @@ Do a brain dump about how we planned CRISM project. With CS we didn't do it, so 
 ## Nathan TODO:
 Make the same thing as "Starting a new project" just for quick steps to pull the branch of interest
 
+### Quick Steps for pulling a branch
+1. Create a [branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) in GitHub or GitLab
+2. Run `git pull` so that your local setup is "aware" that a new branch was created in the repository
+3. Run `git switch branchname` so that you are now working on the new branch
+	1. Run `git checkout branchname` if `switch` doesn't work, see [here](https://stackoverflow.com/questions/57265785/whats-the-difference-between-git-switch-and-git-checkout-branch) for more details about the difference
+
+
+
 ### [[Git]]
 
 ### [[GitHub and GitLab]]
