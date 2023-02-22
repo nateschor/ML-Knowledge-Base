@@ -1,18 +1,7 @@
 
-# Planning a project
+# [[Planning a Project]]
 
 ## Nathan TODO
-
-1. thought about what aspects of previous projects we wanted to improve on
-	- folder structure
-		- folder structure led to our use of [[here]] for file paths, creating an `.RProject` at the root of the repo, and thinking about what kind of folders we would need [[Creating a Coding Pipeline#Automate Folder Generation]]
-	- how we do Pull Requests
-		- thinking about improving Pull Requests led to googling where [[tidylog]] was discovered, and we paired it with [[logr]] for review during pull requests
-2. created the folder structure and wrote skeleton code for the pipeline script
-	- We also thought about what kind of tasks needed to be completed and how to logically break them up into multiple scripts, and what the main pipeline script should look like (see [[Creating a Coding Pipeline#Separating Code into Multiple Scripts]])
-3. determined what code could be reused
-	- thinking about how this project would be different from CS made us realize that we'd have fewer variables in the model and that we should explore the data more, leading to us using/discovering the packages in [[EDA]]
-
 
 Do a brain dump about how we planned CRISM project. With CS we didn't do it, so we made a great progress on this in a year.
 
@@ -24,42 +13,22 @@ Do a brain dump about how we planned CRISM project. With CS we didn't do it, so 
 ## Nathan TODO:
 Make the same thing as "Starting a new project" just for quick steps to pull the branch of interest
 
-### Quick Steps for pulling a branch
-1. Create a [branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) in GitHub or GitLab
-2. Run `git pull` so that your local setup is "aware" that a new branch was created in the repository
-3. Run `git switch branchname` so that you are now working on the new branch
-	1. Run `git checkout branchname` if `switch` doesn't work, see [here](https://stackoverflow.com/questions/57265785/whats-the-difference-between-git-switch-and-git-checkout-branch) for more details about the difference
-
-
+### [[Quick Steps for Pulling a Branch]]
+### [[Quick Steps for Pushing to a Branch]]
+### [[Branch and Issue Workflow]]
 
 ### [[Git]]
 
 ### [[GitHub and GitLab]]
 
-# Planning the new analyses
+
+
+
 
 ## Nathan TODO: Make the below more descriptive by adding examples at every step. Example of notes of what V says during meeting, example of a todo N makes based on the notes, example of issue. 
 
-1. Chat with Vitaly, and take notes on what should be accomplished. This might include: 
-	- immediate steps (that will be addressed in the upcoming issue) such as "Create the outcome variable for default. We will define someone as being in the state of default if they are 90 or more days past due on any trade line within 8 quarters. Please look at the data dictionary and suggest to me which variables we should use to capture their trade lines and send them to me. For capturing 90+ DPD, look at [[data.table]] for computing a rolling sum. Let me know what % of consumers default"
-	- longer term steps (things that are not yet actionable or that we don't want to forget) such as "We want to be able to look at the interpretability of our model. Read this paper about Shapley values, look into some R packages for computing Shapley values, and test them all on 10,000 observations and report back what you find. You're free to create this as a separate issue or part of our current issue"   
-	- revisions to make to previous work (that you can either create a new issue for, or reopen the original issue) such as "we need to change the way we compute or thresholds. Please incorporate this code I have written into our coding pipeline"
-2. Create an [Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues) for addressing the task
-	- Give a title for the issue. For example,  "Create outcome variable for defaulting"
+# [[Planning New Analyses]]
 
-Example issue
-### Generate Shapley value plots
-
-#### Data Prep
-- [ ]   Create a new folder in `code/workflow/pipeline` called `shapley` to hold the scripts
-- [ ]   Run Vitaly's code below for 1 qtr to make sure I am following it
-- [ ]   Remove calls to `sample_n()` or any other experimental efficiency lines
-- [ ]   In the pipeline script, add a `%dopar%` loop to parallelize over models
-- [ ]   save the `df_long` data as `shapley_qtr_rand_no_cid` in a new folder in the pipeline. Saving 1 qtr_rand_no_cid takes 4 minutes
-- [ ]   Calculate the average of the absolute values of the shapley values
-- [ ]   For each model use the top 10 vars with descriptions
-3. In the body of the issue, create tasks to complete using `- [ ]` (see above). These are for you to break down the task into actionable chunks, for you to track your progress, and for Vitaly to be able to see your progress if he would like
-4. Send a screenshot of the issue to Vitaly, who will give edits/commits if needed. This is important because by putting Vitaly's instructions in your own words, you will hopefully flush out anything that you are not on the same page about. Using the example above, Vitaly might make a comment like "we don't want to use [[Parallel Processing]] in this case because the computation is short enough that the overhead of setting up parallel processing will take too long, please change `%dopar%` to `%do`. Furthermore, please add a task to send me summary statistics for each of the top 10 variables that are chosen
 
 Describe the process of preparing an issue. Chat with Vitaly, take notes about what we want to do. Then create an issue based on the notes. Vitaly looks at the issue and edits/comments if needed. You plan the scripts (how do you do that, btw, Nathan, I have no idea). T
 
@@ -67,19 +36,8 @@ Describe the process of preparing an issue. Chat with Vitaly, take notes about w
 
 # Nathan TODO for reasoning:
 Can you add to the reasoning thing below an actionable check list? For example:
-Every time you create a new dataframe:
-- [ ] Check if there are any duplicates at the level of analysis
-Every time you do a filter:
-- [ ] Look at tidylog output and ask yourself whether you understand why the observations are removed. If you're not 100% sure, look at individual examples that are removed 
-Every time you create a new column by doing calculations with `mutate` or `summarize`
-- [ ] Sanity check your results. If you're calculating % of people who default or prepay, can you find a paper that uses similar data to get an estimate? If you're creating groups of people, can you see if your % breakdown is similar to what is in the Census?
-Every time you `pivot_longer` or `pivot_wider`
- - [ ] did you introduce any missing values? Are any observations now list-columns? If so, address them
-Every time you do a complex operation (like ones involving [[data.table]] rolling sums or using [[slider]])
-- [ ] pick a couple of individuals and use `View()` to confirm that your operation worked as expected
-- [ ] Look at the names of the columns. Are they descriptive enough that you know what they are measuring without having to look at the code that created them? Will they become confusing after you do more, similar operations? Will you know what the columns are measuring when you return to the analysis 6 months from now? If the answer is "no" to any of these questions, think of more descriptive names for the columns
-- [ ] check the dimensions of the dataframe. Do they make sense? Have you unexpectedly lost or gained rows?
 
+### [[Data Reasoning Checklist]]
 
 - [[Reasoning About your Data]]
 - [[Creating a Coding Pipeline]]
@@ -87,41 +45,7 @@ Every time you do a complex operation (like ones involving [[data.table]] rollin
 # Nathan TODO: 
 Add discussion of keeping data files separate by time and/or some unit identifiers when the dataset is large.
 
-When the data is large it is important to think about how the data should be partitioned before saved. Thinking about identifieers in time, space, or a combination of the two is a good starting point. For example, if you are working with a panel dataset that is unique at the consumer + quarter level (see [[Reasoning About your Data#Knowing the level of your data]] to see what level it is unique at), then you might want to save file at the quarter level with all consumers present in that quarter. An example is below:
-
-```R
-v_qtrs <- c("2000Q1, 2000Q2, 2000Q3, 2000Q4, 20001Q1") # and so on
-
-for (qtr_ in v_qtrs) {
-
-	print(qtr_)
-	df_filtered <- df %>% # df contains the info you want to save, but for all quarters
-		filter(qtr %in% qtr_)
-
-	path_out <- here(paste0("data/outcome/default_calculated_", qtr_, ".fst"))
-	write_fst(df_filtered, path_out)
-
-}
-
-
-```
-
-You can then load the data one qtr at a time and process it at a later stage in the pipeline, or load it all into memory if you're using it for modeling
-
-```R
-
-path_data <- here("data/outcome/")
-v_data_paths <- dir_ls(path_data)
-
-df <- map_dfr(v_data_paths, function(x) {
-	print(x)
-	read_fst(x)
-})
-
-
-```
-
-
+### [[Data File Separation]]
 
 # Executing the analyses: writing new scripts or editing existing ones
 
@@ -132,30 +56,17 @@ df <- map_dfr(v_data_paths, function(x) {
 ## Nathan TODO: 
 Put the below into a separate file and reference it here
 
-1.  Get the repositorie's HTTPS  from GitLab under Clone --> Clone with HTTPS (or GitHub CLI on GitHub)
-2. In the RStudio terminal, clone repo using `git clone HTTPS`. Talk with your organization's IT if getting errors at this step
-3. Run `renv::init()` followed by `renv::snapshot()`
-    -   note that in order for `renv::snapshot()` to "see" the package, it must be called using either `library(package_name)` or [[pacman]]`::p_load(package_name)` in a **saved script**. `renv::snapshot()` will not be able to find the package if it only lives in an untitled.R script
-4.  `git add .Rprofile renv.lock renv/activate.R`
-5.  `git commit -m "Add initial packages #X"`, where X is replaced with the issue number (4 in the example)
-	1. See [here](https://cbea.ms/git-commit/) for suggestions on how to write a comit message
-6.  `git push`. If continually prompted for your password when using `git push` or `git pull`, talk with your organization's IT
-
-#### Updating or using new packages
-1.  Update packages with `renv::update("package_name_as_string")`
-2.  After you update or install new packages, `renv::snapshot()`
-	1.  `git add renv.lock`
-	2.  `git commit -m "Update package(s) XYZ #X"`
-
-If you want to revert back to an earlier version of the package, use `renv::revert("commit_hash_for_package_version_I_want")` followed by `renv::restore()`
+### [[Setting up a Project with Renv]]
 
 #### writing code
 ## NATHAN TODO: discuss git add and git push, put this in a separate note and link it both here and above in the new "pushing and pulling using git" section
-1. Create a branch that is linked to the issue. For example, if the GitHub/GitLab assigned number to the issue Create outcome variable for defaulting is 4, the name of the branch should be issue4_create_outcome_variable_for_defaulting
-2. `git pull` to make your local setup synced with the repo, and then `git switch issue4_create_outcome_variable_for_defaulting` to switch to the new branch
-3. Write code, committing and pushing as you make changes
-	1. make sure all of your commit messages on these branch include `#4`, so that when you push the commit message and associated changes show up in the issue
-	2. if you want to write a longer message, use `git commit`. It will then open up a [[vim]] editor for your commit message
+
+### [[Quick Steps for Pulling a Branch]]
+### [[Quick Steps for Pushing to a Branch]]
+### [[Branch and Issue Workflow]]
+
+
+
 
 ## Coding Style
 - [[naming conventions]]
@@ -196,14 +107,10 @@ If you want to revert back to an earlier version of the package, use `renv::reve
 ## Regex
 [[RegEx]]
 
-# Having Vitaly sign off on the analyses
+# [[Having Vitaly sign off on the analyses]]
 How does Vitaly sign off the code. Sharing screen while vitaly looks at logs and diffs. Cover pull requests (or just link the git resources again)
 
-1. After you have checked of all boxes created in [[#Planning the new analyses]], open a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
-2. Screenshare with Vitaly while Vitaly looks at the [[logr]] logs and diffs on two windows opened on the same monitor side by side
-3. Make any changes suggested, repeating step 2 as needed
-4. After getting Vitaly's approval, follow [[GitHub and GitLab#Merge Request Workflow]]
-5. Start again with [[#Planning the new analyses]]
+
 
 # Preparing the paper
 
