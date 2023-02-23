@@ -51,3 +51,4 @@ toc()
 - do mini [[tictoc]] experiments to confirm you are getting a speedup by taking a small sample of the data and confirm that parallelizing leads to less computation time than doing it sequentially
 	- there is a startup cost to parallelizng, so make sure you use enough observations in your experiment to ensure that the parallelization speedup overcomes this hump
 - If you are using *n* workers,  go to Task Manager --> Processes --> Background processes and confirming that you see *n* sessions
+- if you are using a computing cluster, sign in with [PuTTY](https://www.ssh.com/academy/ssh/putty/download), `ssh where_you_are_working` and then `htop` to [monitor](https://support.cloudways.com/en/articles/5120765-how-to-monitor-system-processes-using-htop-command#:~:text=The%20htop%20is%20a%20command,different%20sections%20one%20by%20one.) that you see *n* sessions

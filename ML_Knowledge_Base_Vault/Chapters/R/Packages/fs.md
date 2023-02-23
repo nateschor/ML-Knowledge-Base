@@ -1,5 +1,5 @@
 - create and delete folders and list files using [fs](https://www.tidyverse.org/blog/2018/01/fs-1.0.0/)
-- Works well with with `map_dfr` from [purrr](https://purrr.tidyverse.org/),  [[here]], and [[fst]] (works with other file extensions besides `.fst` for reading in all files from a given folder and combining
+- Works well with with `map_dfr` from [purrr](https://purrr.tidyverse.org/),  [[here]], and [[fst]] (works with other file extensions besides `.fst` for reading in all files from a given folder and combining)
 
 ```R
 
