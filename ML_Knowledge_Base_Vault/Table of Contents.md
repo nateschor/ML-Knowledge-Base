@@ -1,4 +1,4 @@
-# Project Stages
+# Project Steps
 1. [[Planning a Project]] **(Nathan TODO: Do a brain dump about how we planned CRISM project. With CS we didn't do it, so we made a great progress on this in a year.**
 	- [[Creating a Coding Pipeline]]
 2. Creating a GitHub/GitLab repository
