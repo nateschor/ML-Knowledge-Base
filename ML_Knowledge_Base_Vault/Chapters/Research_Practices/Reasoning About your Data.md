@@ -34,7 +34,7 @@ df_missing %>%
 
 ### Using explicit function arguments
 
-In the example below, the second function omits `df` even though it is used by `Calculate_Mean`. This is a bad practice because:
+In the example below, the second function omits `df` even though it is used by `Calculate_Mean`. In R, this will not give you an error if df exists in global environment. But this is a bad practice because:
 1. It makes the code harder to follow, since function arguments + function = function output
 2. Changes to `df` outside of `Calculate_Mean` can lead to unintended behavior
 
