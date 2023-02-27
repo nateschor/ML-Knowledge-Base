@@ -37,6 +37,12 @@ Cover latex options here. Texmaker, overleaf. Overleaf ideal, but can't always b
 ## Editing
 Discuss (briefly) how we talk to other economists and iterate on their feedback.  
 
+When giving feedback, rather than talk about what you would like changed, explain the reasoning behind the change and then *make* the change. For example, if a sentence is "models have lower predictive power in the minority group", example of an edit would be:
+
+We should specify which models we are referring to (do all models have less predictive power? Just some of them?), what we mean by predictive power, and what we mean by minority group. Suggested change:
+
+"both XGBoost and Logistic regression had lower ROC AUC for all years in the low-income group compared to the high-income group"
+
 # Resources
 
 ## Git
