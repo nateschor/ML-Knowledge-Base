@@ -1,7 +1,3 @@
-
-### Nathan TODO:
-- add a section in coding practices about saving intermediate data, models et (the more the better, though space is somewhat a concern too). Discuss underlying plot data. If making plots involves a lot of computations, we don't want to be redoing the computations just to change plot labels. So saving the smallest dataset preceding a plot and then doing plot itself in a separate script is a good practive.
-
 # Git steps reference
 [[Quick Steps for Pulling a Branch]]
 [[Quick Steps for Pushing to a Branch]]
@@ -101,6 +97,8 @@ We should specify which models we are referring to (do all models have less pred
 - [[here]]
 - [[fs]]
 - [[tictoc]]
+- [[lobstr]]
+- [[butcher]]
 
 ### Concepts
 - [[EDA]]
