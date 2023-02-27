@@ -1,6 +1,5 @@
 
 ### Nathan TODO:
-Put references git steps under one header with links (in the end is good) like below
 - add a section in coding practices about saving intermediate data, models et (the more the better, though space is somewhat a concern too). Discuss underlying plot data. If making plots involves a lot of computations, we don't want to be redoing the computations just to change plot labels. So saving the smallest dataset preceding a plot and then doing plot itself in a separate script is a good practive.
 
 # Git steps reference
@@ -47,9 +46,23 @@ We should specify which models we are referring to (do all models have less pred
 
 ## Git
 - [[Git]]
+	- [[Git#Resources]]
+	- [[Git#Git's Relationship to your Working Directory]]
+	- [[Git#Git Terminology with Diagrams]]
+	- [[Git#Using Git to Debug Code]]
+	- [[Git#Going Back to Previous Code State]]
+	- [[Git#"Saving" work without commiting it]]
+	- [[Git#Breaking up a larger commit into smaller commits]]
+	- [[Git#Searching all files in repo for a particular string]]
+	- [[Git#See what has changed within a given time period]]
+	- [[Git#Show changes over time for specific file]]
+	- [[Git#Take Stock of your Repo's State]]
 - [[GitHub and GitLab]]
--  [[GitHub and GitLab#Merge Request Workflow]] (Nathan TODO: make all headers explicit so it's very easy to see what things are covered, this section is intended for rapid lookup not in depth reading)
-
+	- [[GitHub and GitLab#Project Workflow]]
+	- [[GitHub and GitLab#Creating an issue and its associated branch in the repo]]
+	- [[GitHub and GitLab#Working locally]]
+	- [[GitHub and GitLab#Merge Request Workflow]]
+	- [[GitHub and GitLab#GitHub shortcuts]]
 - [[One Branch for One Issue Workflow]]
 - [[Quick Steps for Pulling a Branch]]
 - [[Quick Steps for Pushing to a Branch]]
@@ -63,6 +76,10 @@ We should specify which models we are referring to (do all models have less pred
 
 ## Shell 
 - [[Shell]]
+	- [[Shell#Resources]]
+	- [[Shell#Common Functions]]
+	- [[Shell#Opening files]]
+	- [[Shell#Adding Aliases]]
 
 # R
 

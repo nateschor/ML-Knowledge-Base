@@ -1,4 +1,4 @@
-#### Getting Started
+#### Resources
 
 - software carpentry [tutorial](https://swcarpentry.github.io/shell-novice/)
 - extra shell [material](https://carpentries-incubator.github.io/shell-extras/)

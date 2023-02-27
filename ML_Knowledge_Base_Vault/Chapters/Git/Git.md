@@ -13,7 +13,7 @@
 - [git for computer scientists](https://eagain.net/articles/git-for-computer-scientists/)
 ![[git_terminology.png]]
 
-### Debugging
+### Using Git to Debug Code
 -   Use `git blame filename` to look at who modified each [individual line](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git) within a file
 	- Helpful when used in conjunction with [[#Show changes over time for specific file]]
 -   When you introduced a bug but don't know where, use `git bisect` to [search]([https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git)) between commits A and Z to try to figure out where it might be 
@@ -51,7 +51,7 @@
 - `git log -p file_name`
 - Works well with `git blame` from [[#Debugging]]
 
-#### Helpful for Taking Stock of your Repo's State
+#### Take Stock of your Repo's State
 ![[view_file_on_another_branch.png]]
 
 ![[branches_upsteams_last_commits.png]]
