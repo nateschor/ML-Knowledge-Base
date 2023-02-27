@@ -1,7 +1,3 @@
-# Git steps reference
-[[Quick Steps for Pulling a Branch]]
-[[Quick Steps for Pushing to a Branch]]
-
 # Project Steps
 1. [[Planning a Project]] 
 	- [[Creating a Coding Pipeline]]
