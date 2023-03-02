@@ -1,7 +1,7 @@
 Every time you create a new dataframe:
-- [ ] Check if there are any duplicates at the level of analysis
+- [ ] Check if there are any duplicates at the level of analysis (see [[Reasoning About your Data#Knowing the level of your data]] for determing the level of analysis)
 Every time you do a filter:
-- [ ] Look at tidylog output and ask yourself whether you understand why the observations are removed. If you're not 100% sure, look at individual examples that are removed. If you're working with panel data, it's usually helpful to select all observations for a unit (say, consumer) that has something missing. It's easier to see why things are missing when you know what happens *around* missing observations.
+- [ ] Look at [[tidylog]] output and ask yourself whether you understand why the observations are removed. If you're not 100% sure, look at individual examples that are removed. If you're working with panel data, it's usually helpful to select all observations for a unit (say, consumer) that has something missing. It's easier to see why things are missing when you know what happens *around* missing observations.
 Every time you create a new column by doing calculations with `mutate` or `summarize`
 - [ ] Sanity check your results. Do the numbers (or their summary statists) make sense? If you're calculating % of people who default or prepay, can you find a paper that uses similar data to get an estimate? If you're creating groups of people, can you see if your % breakdown is similar to what is in the Census? If you're looking at mortage data and you don't see any loans >100K, that fails sanity check. If you're working with credit cards not seeing such loans passes sanity check.
 Every time you `pivot_longer` or `pivot_wider`
