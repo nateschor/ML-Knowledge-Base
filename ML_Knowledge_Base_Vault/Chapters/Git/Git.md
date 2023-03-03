@@ -56,4 +56,5 @@
 
 ![[branches_upsteams_last_commits.png]]
 
+- `git checkout issue5_create_outcome -- code/pipeline/00_run_pipeline.R` to update the `00_run_pipeline.R` script you have on your current branch with the version that is on branch `issue5_create_outcome`. This is helpful if, for example, you and someone else are both trying to work on the same file in different branches to try two different approaches and then you converge on an approach.
 
