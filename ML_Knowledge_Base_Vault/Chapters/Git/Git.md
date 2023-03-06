@@ -58,3 +58,11 @@
 
 - `git checkout issue5_create_outcome -- code/pipeline/00_run_pipeline.R` to update the `00_run_pipeline.R` script you have on your current branch with the version that is on branch `issue5_create_outcome`. This is helpful if, for example, you and someone else are both trying to work on the same file in different branches to try two different approaches and then you converge on an approach.
 
+#### Push Empty Folders to Repo Using .gitkeep Placeholder 
+Helpful if you create a folder structure but don't yet have any files saved within the folders. Since git doesn't track empty folders, you need to put "something" in the folder for git to be aware of the folder and to be able to push it. The "something" is a placeholder file called [.gitkeep](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/gitkeep-push-empty-folders-git-commit#:~:text=The%20purpose%20of%20the%20.,gitkeep%20in%20it.)
+
+To put place holder files in all of the empty directories that are children of your current working directory, run the following [[Shell]] code:
+
+`for path in $(find . -type d -empty); do touch $path/.gitkeep; done;`
+
+`find . -type d -empty` searches for empty directories. The `$()` expands the code within side so that the directories can be looped over. `touch $path/.gitkeep` creates a .gitkeep file in each empty directory. 

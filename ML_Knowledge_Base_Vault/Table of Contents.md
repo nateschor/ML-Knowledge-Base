@@ -49,6 +49,7 @@ We should specify which models we are referring to (do all models have less pred
 	- [[Git#See what has changed within a given time period]]
 	- [[Git#Show changes over time for specific file]]
 	- [[Git#Take Stock of your Repo's State]]
+	- [[Git#Push Empty Folders to Repo Using .gitkeep Placeholder]]
 - [[GitHub and GitLab]]
 	- [[GitHub and GitLab#Project Workflow]]
 	- [[GitHub and GitLab#Creating an issue and its associated branch in the repo]]
