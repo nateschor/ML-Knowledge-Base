@@ -74,6 +74,7 @@ We should specify which models we are referring to (do all models have less pred
 	- [[Shell#Opening files]]
 	- [[Shell#Adding Aliases]]
 	- [[Shell#Creating Files from a `.csv` Column]]
+	- [[Shell#Syntax for Nested Loop]]
 
 # R
 

@@ -63,7 +63,17 @@ Date
 
 You can do this programatically with `for fruit in $(tail -n+2 fruit.csv); do touch ${fruit}.txt; done;`
 
+#### Syntax for Nested Loop
 
+```Shell
+for i in 1 2 3
+do 
+	for j in A B C
+	do 
+		echo "$i$j"
+	done
+done
+```
 
 
 
