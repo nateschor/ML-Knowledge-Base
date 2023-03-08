@@ -51,6 +51,21 @@ Logical flags
 
 ![[shell_logical_flags.png]]
 
+#### Creating Files from a `.csv` Column
+
+- imagine you have the following table `fruit.csv` and want to create a file `fruit.txt` for each of the fruits:
+
+**Fruit**
+Apple
+Banana
+Cherry
+Date
+
+You can do this programatically with `for fruit in $(tail -n+2 fruit.csv); do touch ${fruit}.txt; done;`
+
+
+
+
 
 
 
