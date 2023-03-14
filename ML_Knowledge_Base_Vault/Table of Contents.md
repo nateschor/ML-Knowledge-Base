@@ -34,6 +34,12 @@ We should specify which models we are referring to (do all models have less pred
 
 "both XGBoost and Logistic regression had lower ROC AUC for all years in the low-income group compared to the high-income group"
 
+## Presenting
+- if a slide contains a link, have a backup slide that with a screenshot that shows the content you wanted to display from the link
+- for sections with a lot of information, include an overview slide that helps orient the audience to what they'll be seeing
+- ensure the font is legible
+	- the font may be large enough when everyone is sitting in front of their own computer screen, but will it be large enough for people who decide to project your talk in a conference room?
+
 # Resources
 
 ## Git
