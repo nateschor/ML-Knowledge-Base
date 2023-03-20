@@ -65,7 +65,7 @@ The screnshots below give examples of how to:
 `print("This is collapsed, and is helpful for not crowding the text with code and figures")``
 
 </details>
-
+- press `/` to easily create a code block, collapsable details, saved replies, or a table
 
 
 
