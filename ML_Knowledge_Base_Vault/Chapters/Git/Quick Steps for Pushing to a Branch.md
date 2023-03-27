@@ -9,5 +9,6 @@
 		- press enter to exit out of interacted mode, and then 7 to quit
 4. `git commit -m "Informative commit message here #branch_number"`
 	- see [How to Write a Git Commit Message](https://cbea.ms/git-commit/)
+	- if you are in the middle of a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), also include `#pull_request_number` in addition to `#branch_number` in your commit message
 	- use the `#branch_number` so that when you push, the commit shows up in the appropriate issue
 5. `git push`
