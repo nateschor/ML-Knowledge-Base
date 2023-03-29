@@ -106,6 +106,7 @@ We should specify which models we are referring to (do all models have less pred
 - [[butcher]]
 - [[datapasta]]
 - [[searcher]]
+- [[shrtcts]]
 
 ### Concepts
 - [[EDA]]
