@@ -1,1 +1,2 @@
 - R model objects can be unnecessarily large, since they include extra things like the underlying plot data. [butcher](https://butcher.tidymodels.org/) lets you remove unnecessary model object components to make the saved model object take up less space (see [[lobstr]])
+- see [[bundle]] for how to save the model object

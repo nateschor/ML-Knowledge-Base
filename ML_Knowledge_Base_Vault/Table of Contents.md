@@ -117,6 +117,7 @@ We should specify which models we are referring to (do all models have less pred
 - [[datapasta]]
 - [[searcher]]
 - [[shrtcts]]
+- [[bundle]]
 
 ### Concepts
 - [[EDA]]

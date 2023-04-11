@@ -1,0 +1,3 @@
+- provides interface for saving and loading model objects and is a better alternative to `.rds`
+- vignette [here](https://rstudio.github.io/bundle/articles/bundle.html)
+- see [[butcher]] for how to remove unnecessary information that gets stored within the model object
