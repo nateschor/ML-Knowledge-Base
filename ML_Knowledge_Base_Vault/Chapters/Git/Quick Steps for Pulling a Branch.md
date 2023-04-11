@@ -1,0 +1,4 @@
+1. Create a [branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) in GitHub or GitLab
+2. Run `git pull` so that your local setup is "aware" that a new branch was created in the repository
+3. Run `git switch branchname` so that you are now working on the new branch
+	1. Run `git checkout branchname` if `switch` doesn't work, see [here](https://stackoverflow.com/questions/57265785/whats-the-difference-between-git-switch-and-git-checkout-branch) for more details about the difference

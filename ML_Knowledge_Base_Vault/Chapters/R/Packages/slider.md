@@ -1,0 +1,1 @@
+- vignette [here](https://cran.r-project.org/web/packages/slider/vignettes/slider.html)

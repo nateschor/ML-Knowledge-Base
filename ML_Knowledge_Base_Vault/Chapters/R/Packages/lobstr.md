@@ -1,0 +1,2 @@
+- see how much memory an R object takes up
+- vignette [here](https://www.tidyverse.org/blog/2018/12/lobstr/)

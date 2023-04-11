@@ -1,0 +1,2 @@
+- documentation [here](https://tsibble.tidyverts.org/)
+- an espeically useful function is [`fill_gaps`](https://tsibble.tidyverts.org/#fill_gaps-to-turn-implicit-missing-values-into-explicit-missing-values) for turning implict missing values into explicit missing values
