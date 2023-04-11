@@ -25,6 +25,16 @@ Cover latex options here. Texmaker, overleaf. Overleaf ideal, but can't always b
 	- use [[kableExtra]] for generating `.tex` files
 	- use [[ggplot]] for generating the `.png` output
 
+### Packages
+- `hyperref` for adding hyperlinks to text
+	- `\href{URL}{text to display}`
+- `xcolor` to change the color of text
+	- `\textcolor{blue}{text I want in a different color}`
+	- works for links too, `\href{URL}{\textcolor{blue}{text to display in a different color}}`
+- `float` to force LaTeX to put figures exactly where they are specified in the code
+	- add `[H]` to your figure environment, as in `\begin{figure}[H]`
+- `parskip` to make all paragraphs left aligned
+
 ## Editing
 Discuss (briefly) how we talk to other economists and iterate on their feedback.  
 
