@@ -118,6 +118,7 @@ We should specify which models we are referring to (do all models have less pred
 - [[searcher]]
 - [[shrtcts]]
 - [[bundle]]
+- [[diffobj]]
 
 ### Concepts
 - [[EDA]]
