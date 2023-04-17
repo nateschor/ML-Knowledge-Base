@@ -35,7 +35,7 @@ Add instructions on how to set up a git repo
     
 4.  Remove the issue branch.
     
-5.  Post a summary comment under the issue thread, include the stable link to the issue branch (also to the issue sub, but this is not always applicable). Include the hash of the commit where the changes were merged into main.
+5.  Post a summary comment under the issue thread, include the stable link to the issue branch (also to the issue sub, but this is not always applicable). Include the hash of the commit where the changes were merged into main. Close the issue after adding the summary comment, merge commit hash, and stable links.
     
 6.  Link to that comment under the thread for the pull request.
     
