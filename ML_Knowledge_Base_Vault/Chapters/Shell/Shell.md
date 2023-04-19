@@ -75,6 +75,10 @@ do
 done
 ```
 
+#### Quickly View Multiple `.csv` Files
+
+`head *.csv | coumn -t -s, | less -S`
+
 
 
 

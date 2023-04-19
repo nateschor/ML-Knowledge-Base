@@ -91,6 +91,7 @@ We should specify which models we are referring to (do all models have less pred
 	- [[Shell#Adding Aliases]]
 	- [[Shell#Creating Files from a `.csv` Column]]
 	- [[Shell#Syntax for Nested Loop]]
+	- [[Shell#Quickly View Multiple `.csv` Files]]
 
 # R
 
