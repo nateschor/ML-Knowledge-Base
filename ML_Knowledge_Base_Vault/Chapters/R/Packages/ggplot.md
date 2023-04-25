@@ -46,4 +46,5 @@ Note that the font you include for `family` needs to be one of the (many) fonts 
 
 See this [post](https://stackoverflow.com/questions/34522732/changing-fonts-in-ggplot2) for more information
 More information on color schemes in the `khroma` package described [here](https://cran.r-project.org/web/packages/khroma/vignettes/tol.html)
+[ggpp](https://cran.r-project.org/web/packages/ggpp/index.html) package extends ggplot with the ability to add tables directly to the [plot](https://cran.r-project.org/web/packages/ggpp/vignettes/grammar-extensions.html) and enhanced non-overlapping [labels](https://cran.r-project.org/web/packages/ggpp/vignettes/nudge-examples.html) for points
 
